@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Cookies — Linger</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0f0e1a; color: #e8e4dc; font-family: Georgia, serif; line-height: 1.8; padding: 40px 20px; }
+  .container { max-width: 720px; margin: 0 auto; }
+  .logo { font-size: 28px; letter-spacing: 0.12em; color: #fff; margin-bottom: 8px; }
+  .logo span { color: #c8a07a; }
+  .doc-title { font-size: 22px; color: #fff; margin: 32px 0 4px; letter-spacing: 0.04em; }
+  .version { font-size: 13px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 40px; }
+  h2 { font-size: 15px; color: #c8a07a; letter-spacing: 0.08em; margin: 36px 0 12px; }
+  p { font-size: 14px; color: rgba(255,255,255,0.7); margin-bottom: 12px; text-align: justify; }
+  hr { border: none; border-top: 0.5px solid rgba(255,255,255,0.08); margin: 48px 0; }
+  .footer { font-size: 12px; color: rgba(255,255,255,0.25); text-align: center; margin-top: 48px; font-style: italic; }
+  a { color: #c8a07a; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">linger<span>.</span></div>
+  <div class="doc-title">Política de Cookies e Armazenamento Local</div>
+  <div class="version">Versão 1.0 — Abril de 2026</div>
+
+  <h2>1. Sobre esta Política</h2>
+  <p>Esta política descreve como o Linger utiliza armazenamento local no dispositivo do usuário. Por ser um aplicativo mobile nativo, o Linger não utiliza cookies HTTP tradicionais em sua interface principal.</p>
+
+  <h2>2. O que Armazenamos no Dispositivo</h2>
+  <p><strong style="color:rgba(255,255,255,0.9)">Armazenamento seguro (FlutterSecureStorage):</strong> Token de acesso JWT — necessário para autenticar requisições à API; token de refresh — necessário para renovar a sessão sem novo login; identificador do usuário (UUID) — necessário para identificar a sessão local. No Android, esses dados são armazenados em Encrypted Shared Preferences. No iOS, são armazenados no Keychain com acesso liberado após o primeiro desbloqueio do dispositivo.</p>
+  <p><strong style="color:rgba(255,255,255,0.9)">Preferências do aplicativo (SharedPreferences):</strong> Flag de conclusão do onboarding — indica se o usuário já completou o processo de cadastro; flags de visualização da introdução do match — indicam se o usuário já viu o texto de apresentação de determinado match diário.</p>
+  <p><strong style="color:rgba(255,255,255,0.9)">Armazenamento temporário em memória (RAM):</strong> O histórico do chat de onboarding é mantido apenas em memória durante o processo de cadastro e descartado ao fechar o aplicativo antes da conclusão. O código de indicação pendente e o identificador de verificação de telefone Firebase são mantidos em memória durante o fluxo de autenticação e descartados após a conclusão.</p>
+
+  <h2>3. Firebase</h2>
+  <p>O SDK do Firebase é utilizado para dois fins: verificação de número de telefone por SMS durante o login (Firebase Authentication) e envio de notificações push (Firebase Cloud Messaging). Durante o fluxo de verificação por SMS, o Firebase pode armazenar temporariamente dados de sessão no dispositivo, descartados após a autenticação ser concluída. Na versão web do aplicativo, o Firebase pode utilizar IndexedDB ou localStorage do navegador. Para detalhes, consulte a política de privacidade do Google em <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.</p>
+
+  <h2>4. Finalidade</h2>
+  <p>Todo o armazenamento local tem finalidade exclusivamente funcional: manter a sessão do usuário ativa, evitar login repetido e garantir o funcionamento das notificações. Não utilizamos armazenamento local para fins de rastreamento, publicidade ou análise comportamental.</p>
+
+  <h2>5. Como Remover os Dados Locais</h2>
+  <p>Os dados armazenados localmente são removidos automaticamente ao excluir a conta pelo aplicativo ou ao desinstalar o aplicativo do dispositivo. Você também pode limpar os dados manualmente nas configurações do seu dispositivo, em "Armazenamento do aplicativo".</p>
+
+  <h2>6. Contato</h2>
+  <p>Para dúvidas sobre esta Política, entre em contato pelo e-mail <a href="mailto:linger.dating.app@gmail.com">linger.dating.app@gmail.com</a>.</p>
+
+  <hr>
+  <div class="footer">linger. — <a href="termos.html">Termos de Uso</a> · <a href="privacidade.html">Política de Privacidade</a></div>
+</div>
+</body>
+</html>

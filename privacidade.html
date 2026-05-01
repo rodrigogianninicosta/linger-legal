@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Linger</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0f0e1a; color: #e8e4dc; font-family: Georgia, serif; line-height: 1.8; padding: 40px 20px; }
+  .container { max-width: 720px; margin: 0 auto; }
+  .logo { font-size: 28px; letter-spacing: 0.12em; color: #fff; margin-bottom: 8px; }
+  .logo span { color: #c8a07a; }
+  .doc-title { font-size: 22px; color: #fff; margin: 32px 0 4px; letter-spacing: 0.04em; }
+  .version { font-size: 13px; color: rgba(255,255,255,0.4); font-style: italic; margin-bottom: 40px; }
+  h2 { font-size: 15px; color: #c8a07a; letter-spacing: 0.08em; margin: 36px 0 12px; }
+  p { font-size: 14px; color: rgba(255,255,255,0.7); margin-bottom: 12px; text-align: justify; }
+  hr { border: none; border-top: 0.5px solid rgba(255,255,255,0.08); margin: 48px 0; }
+  .footer { font-size: 12px; color: rgba(255,255,255,0.25); text-align: center; margin-top: 48px; font-style: italic; }
+  a { color: #c8a07a; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">linger<span>.</span></div>
+  <div class="doc-title">Política de Privacidade</div>
+  <div class="version">Versão 1.0 — Abril de 2026</div>
+
+  <h2>1. Controlador dos Dados</h2>
+  <p>Nome fantasia: Linger. Razão social: R G Costa Desenvolvimento de Software. CNPJ: 61.659.933/0001-80. Endereço: Rua Demócrito de Souza Filho, nº 335, Sala 501, Edifício Green Tower, Madalena, Recife — PE, CEP 50.610-120. Contato do encarregado de dados (DPO): <a href="mailto:linger.dating.app@gmail.com">linger.dating.app@gmail.com</a>.</p>
+
+  <h2>2. Dados que Coletamos</h2>
+  <p><strong style="color:rgba(255,255,255,0.9)">2.1 Fornecidos pelo usuário no cadastro e onboarding:</strong> Nome de exibição; data de nascimento; número de telefone, verificado por código SMS via Firebase Authentication; identidade de gênero e preferência de conexão; até 3 fotos; coordenadas de latitude e longitude; música favorita (título, artista, identificador Deezer e URL de capa); respostas ao chat do curador durante o onboarding; código de indicação, quando informado voluntariamente.</p>
+  <p><strong style="color:rgba(255,255,255,0.9)">2.2 Gerados pelo sistema:</strong> Essências — 6 traços de personalidade com pesos numéricos, derivados por inteligência artificial com base nas respostas do onboarding; vetor de embedding semântico (1536 dimensões) gerado a partir das essências; score de compatibilidade (0–100) calculado no momento de cada match; textos de apresentação e perguntas gerados pela IA; histórico de matches diários e status de cada ciclo; preferências de busca e contador de dias sem match; token FCM do dispositivo para envio de notificações push; data e versão dos Termos de Uso aceitos pelo usuário.</p>
+  <p><strong style="color:rgba(255,255,255,0.9)">2.3 Coletados automaticamente:</strong> Logs de acesso do servidor (horário, rota acessada, status HTTP e tamanho da resposta), sem registro de IP ou user-agent no padrão atual; token de acesso JWT e hash do refresh token.</p>
+
+  <h2>3. Como Usamos os Dados</h2>
+  <p>Verificação do número de telefone por SMS para autenticação segura; formação do par diário pelo algoritmo de matching; geração de textos personalizados pela IA; envio de notificações push (match formado, nova mensagem, encerramento do chat); rastreamento de indicações e distribuição de benefícios em campanhas ativas; registro de aceite dos Termos de Uso para fins legais; segurança e prevenção de fraudes; cumprimento de obrigações legais.</p>
+
+  <h2>4. Compartilhamento com Terceiros</h2>
+  <p><strong style="color:rgba(255,255,255,0.9)">OpenAI (EUA):</strong> recebe dados do usuário para geração de textos e extração de essências. Os dados enviados incluem nome, idade, identidade, preferências, música favorita, histórico do chat de onboarding e essências com pesos. Consulte a política em <a href="https://openai.com/privacy" target="_blank">openai.com/privacy</a>.</p>
+  <p><strong style="color:rgba(255,255,255,0.9)">OpenRouter (EUA):</strong> recebe mensagens do chat para processamento por modelos de linguagem em funcionalidades específicas do backend. Consulte a política em <a href="https://openrouter.ai" target="_blank">openrouter.ai</a>.</p>
+  <p><strong style="color:rgba(255,255,255,0.9)">Firebase / Google (EUA):</strong> utilizado para verificação do número de telefone por SMS (Firebase Authentication) e para entrega de notificações push (Firebase Cloud Messaging). Consulte a política em <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.</p>
+  <p><strong style="color:rgba(255,255,255,0.9)">Amazon Web Services (EUA):</strong> o serviço Amazon Rekognition pode ser utilizado para verificação facial comparando foto de perfil e selfie, quando ativado. Consulte a política em <a href="https://aws.amazon.com/privacy" target="_blank">aws.amazon.com/privacy</a>.</p>
+  <p><strong style="color:rgba(255,255,255,0.9)">Deezer (França):</strong> utilizado para busca e exibição de metadados de músicas. Consulte a política em <a href="https://deezer.com/legal/privacy" target="_blank">deezer.com/legal/privacy</a>.</p>
+  <p>Não vendemos dados pessoais a terceiros.</p>
+
+  <h2>5. O que Outro Usuário Vê de Você</h2>
+  <p>Quando você é pareado com outro usuário, ele tem acesso a: nome de exibição, idade calculada, distância aproximada em quilômetros, lista de essências (nomes dos traços, sem pesos), fotos (com desfoque progressivo durante as primeiras horas do chat) e música favorita. Seu número de telefone, coordenadas exatas e demais dados internos não são exibidos ao par em nenhum momento.</p>
+
+  <h2>6. Sistema de Indicações</h2>
+  <p>Caso o usuário informe um código de indicação durante o cadastro, esse código é armazenado para fins de rastreamento de indicações e distribuição de benefícios ao indicador. Nenhum dado pessoal do usuário é compartilhado com o indicador — apenas a confirmação de que o cadastro foi realizado com o código informado.</p>
+
+  <h2>7. Armazenamento e Retenção</h2>
+  <p>Os dados são armazenados em banco de dados PostgreSQL hospedado em servidor próprio. Fotos e arquivos de mídia são armazenados em disco no servidor. Os dados permanecem armazenados enquanto a conta estiver ativa. Mensagens do chat não possuem prazo automático de exclusão e permanecem vinculadas ao histórico do match enquanto a conta existir. Ao excluir a conta, todos os dados pessoais são removidos permanentemente do banco de dados, incluindo mensagens, essências, histórico de matches e tokens. Arquivos de mídia armazenados no servidor são removidos em até 30 dias após a exclusão da conta.</p>
+
+  <h2>8. Seus Direitos (LGPD)</h2>
+  <p>Nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem direito a: confirmar a existência de tratamento; acessar seus dados; corrigir dados incompletos ou desatualizados; solicitar anonimização, bloqueio ou eliminação; revogar consentimento; solicitar portabilidade; obter informações sobre compartilhamento. Para exercer seus direitos, entre em contato pelo e-mail <a href="mailto:linger.dating.app@gmail.com">linger.dating.app@gmail.com</a>.</p>
+
+  <h2>9. Segurança</h2>
+  <p>Utilizamos verificação de número de telefone por SMS via Firebase Authentication no cadastro; tokens JWT com assinatura HMAC para autenticação nas requisições; refresh tokens armazenados apenas como hash SHA-256; armazenamento seguro de tokens no dispositivo (Android Encrypted Preferences / iOS Keychain); comunicação via HTTPS.</p>
+
+  <h2>10. Menores de Idade</h2>
+  <p>O Linger é destinado exclusivamente a maiores de 18 anos. Não coletamos intencionalmente dados de menores. Se identificarmos cadastro de menor, a conta será encerrada e os dados removidos.</p>
+
+  <h2>11. Alterações</h2>
+  <p>Atualizações relevantes a esta Política serão comunicadas pelo aplicativo com antecedência mínima de 15 dias.</p>
+
+  <hr>
+  <div class="footer">linger. — <a href="termos.html">Termos de Uso</a> · <a href="cookies.html">Política de Cookies</a></div>
+</div>
+</body>
+</html>
